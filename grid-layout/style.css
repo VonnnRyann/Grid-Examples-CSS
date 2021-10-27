@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+    background-color: rgb(252, 246, 252);
+}
+h1 {
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+}
+section {
+    background-color: rgb(252, 246, 252);
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 3.5fr;
+    height: 85vh;
+}
+div {
+    border: 5px solid blue;
+    margin: 5px 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-weight: bold;
+}
+div:first-of-type {
+    grid-area: 1/1/1/4;
+}
+div:nth-of-type(2) {
+    grid-area: 2/1/4;
+}
+div:nth-of-type(4) {
+    grid-area: 2/3/5;
+}

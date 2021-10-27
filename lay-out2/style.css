@@ -1,0 +1,101 @@
+
+section {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(231, 210, 210);
+    color: rgb(15, 110, 235);
+}
+div {
+    text-align: center;
+    font-size: 30px;
+    margin: 1% 1%;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.box1 {
+    border: 3px solid blue;
+    grid-area: 1/1/1/7;
+    padding-top: 15px;
+}
+.box2 {
+    background-color: rgb(140, 189, 221);
+    grid-area: 2/2/4/4;
+    border: 3px solid blue;
+}
+.box3 {
+    grid-area: 2/1/7/1;
+    border: 3px solid blue;
+}
+.box4 {
+    background-color: darkmagenta;
+    grid-area: 2/4/4/6;
+    border: 5px solid rgb(208, 208, 226);
+}
+.box5 {
+    border: 3px solid blue;
+    grid-area: 2/6/7/6;
+}
+.box6 {
+    background-color: rgb(11, 78, 11);
+    grid-area: 4/2/7/2;
+    border: 3px solid blue;
+    
+}
+.box7 {
+    border-top: 3px solid blue;
+    background-color: rgb(110, 140, 238);
+    grid-area: 4/3/5/5;
+    
+}
+
+.box8 {
+    
+    background-color: rgb(55, 98, 238);
+    grid-area: 6/3/5/5;
+}
+.box9 {
+    border: 3px solid blue;
+    grid-area: 4/5/7/5;
+    
+}
+.box10 {
+    background-color: rgb(3, 104, 172);
+    grid-area: 7/3/6/5;
+    border-bottom: 3px solid blue;
+    
+}
+.box7,.box8,.box10 {
+    color: whitesmoke;
+}
+.box3,.box5 {
+    border: 3px solid blue;
+    padding-top: 290px;
+}
+.box6,.box9 {
+    background-color: burlywood;
+    border: 3px solid blue;
+    color: rgb(15, 110, 235);
+    padding-top: 90px;
+}
+#roman1,#roman2,#roman3,#roman4 {
+    background-color: burlywood;
+}
+#roman1,#roman2 {
+    border-top:  10px solid rgb(142, 194, 241);
+    border-bottom: 3px solid rgb(142, 194, 241);
+}
+#roman3,#roman4 {
+    border-top:  3px solid rgb(142, 194, 241);
+    border-bottom: 10px solid rgb(142, 194, 241);
+}
+#roman1,#roman3 {
+    border-right: 3px solid rgb(142, 194, 241);
+    border-left: 10px solid rgb(142, 194, 241);
+}
+#roman2,#roman4 {
+    border-right: 10px solid rgb(142, 194, 241); 
+    border-left: 3px solid rgb(142, 194, 241);
+}

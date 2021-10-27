@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+section {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8,1fr); /* short version */
+    background-color: rosybrown;
+}
+div {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    padding-top: 20px;
+}
+.box1 {
+    background-color: rgb(165, 187, 233);
+    grid-area: 1/1/1/7;
+    background-image: url(./Essence\ V3\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.box2 {
+    background-color: darkgoldenrod;
+    grid-area: 2/2/4/4;
+}
+.box3 {
+    grid-area: 2/1/7/1;
+}
+.box4 {
+    background-color: darkmagenta;
+    grid-area: 2/4/4/6;
+    border: 5px solid rgb(208, 208, 226);
+}
+.box5 {
+    grid-area: 2/6/7/6;
+}
+.box6 {
+    background-color: rgb(11, 78, 11);
+    grid-area: 4/2/7/2;
+    border-left: rosybrown 10px solid;
+    
+}
+.box7 {
+    background-color: rgb(247, 247, 169);
+    grid-area: 4/3/5/5;
+    border-top: rosybrown 10px solid;
+}
+.box8 {
+    background-color: rgb(226, 226, 108);
+    grid-area: 6/3/5/5;
+}
+.box9 {
+    
+    grid-area: 4/5/7/5;
+    border-right: rosybrown 10px solid;
+}
+.box10 {
+    background-color: rgb(240, 240, 6);
+    grid-area: 7/3/6/5;
+    border-bottom:rosybrown 10px solid;
+}
+.box3,.box5 {
+    background-color: blue;
+    color: white;
+}
+.box6,.box9 {
+    background-color: rgb(11, 78, 11);
+    border-top: rosybrown 10px solid;
+    border-bottom:rosybrown 10px solid;
+    color: white;
+}
+#roman1,#roman2,#roman3,#roman4 {
+    background-color: rgb(253, 241, 74);
+}
+#roman1,#roman2 {
+    border-top:  10px solid rgb(142, 194, 241);
+    border-bottom: 3px solid rgb(142, 194, 241);
+}
+#roman3,#roman4 {
+    border-top:  3px solid rgb(142, 194, 241);
+    border-bottom: 10px solid rgb(142, 194, 241);
+}
+#roman1,#roman3 {
+    border-right: 3px solid rgb(142, 194, 241);
+    border-left: 10px solid rgb(142, 194, 241);
+}
+#roman2,#roman4 {
+    border-right: 10px solid rgb(142, 194, 241); 
+    border-left: 3px solid rgb(142, 194, 241);
+}
+

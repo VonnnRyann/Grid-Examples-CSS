@@ -1,0 +1,36 @@
+body {
+    background-color: pink;
+}
+section {
+    width: 80vmin;
+    height: 80vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;   
+}
+div {
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1px;
+}
+section>div:first-of-type {
+    grid-area: 1/1/1/5;
+    background-color: burlywood;
+}
+section>div:nth-of-type(2) {
+    grid-area: 2/1/5;
+    background-color: darkslateblue;
+}
+section>div:nth-of-type(3) {
+    grid-area: 2/2/3/4;
+    background-color: darkturquoise;
+}
+section>div:nth-of-type(4) {
+    background-color: blueviolet;
+}
+section>div:last-of-type {
+    grid-area: 3/2/3/5;
+    background-color: rgb(156, 63, 77);
+}

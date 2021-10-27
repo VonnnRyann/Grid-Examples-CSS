@@ -1,0 +1,27 @@
+
+main {
+    color: blue;
+}
+section {
+    height: 70vmin;
+    width: 50vmin;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 113px 113px 113px;
+    grid-template-rows: 150px 150px 150px;
+}
+div {
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 1% 1%;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+div:hover {
+    color: white;
+    background-color: blue;
+}
+p {
+    margin-top: 50%;
+}

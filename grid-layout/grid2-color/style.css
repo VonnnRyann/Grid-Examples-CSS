@@ -1,0 +1,79 @@
+
+main {
+    height: 100vmin;
+    width: 80vmin;
+    background-color: rgb(183, 183, 241);
+    display: grid;
+    grid-template-areas: 'header header header header header header'
+    'menu box3 box3 roman1 roman2 ads'
+    'menu box3 box3 roman3 roman4 ads'
+    'menu box6 box7 box7 box9 ads'
+    'menu box6 box8 box8 box9 ads'
+    'menu box6 box10 box10 box9 ads';
+    border: black 1px solid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr  1fr 1fr;
+
+}
+header {
+    grid-area: header;
+    background-color:blanchedalmond;
+}
+#menu {
+    grid-area:menu;
+    background-color: blue;
+}
+#ads {
+    grid-area: ads;
+    background-color: brown;
+
+}
+#box3 {
+    grid-area: box3;
+    background-color: chocolate;
+}
+#roman {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    background-color: darkgoldenrod;
+}
+#rowing {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+/* #roman {
+    grid-area: roman2;
+    background-color: darkgoldenrod;
+}
+#roman {
+    grid-area: roman;
+    background-color: darkgoldenrod;
+} */
+
+
+#box6 {
+    grid-area: 1/1/6;
+    background-color: darkorchid;
+}
+#box7 {
+    grid-area: 1;
+    background-color: darkred;
+}
+#box8 {
+    grid-area: 2/2;
+    background-color: darksalmon;
+}
+#box9 {
+    grid-area: 1/3/6;
+    background-color: darkseagreen;
+}
+#box10 {
+    grid-area: 3/2;
+    background-color: darkslategrey;
+}
